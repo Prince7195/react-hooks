@@ -1,0 +1,16 @@
+useCallback:
+
+useCallback is modified based on the give param changed
+
+const [count, setCount] = useState(0);
+
+const increment = useCallback(() => {
+    setCount((count) => count + 1);
+}, [setCount]);
+
+this will not be re created for every time if it is passed as a prop to the child component, not create as a function in the parent itself
+Not Ex:
+<Button increase={() => increment()} />
+
+Yes Ex:
+<Button increase={increment} />

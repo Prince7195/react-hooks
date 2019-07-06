@@ -1,0 +1,3 @@
+React.memo;
+
+React.memo makes the component re-rendered when the props is changed.

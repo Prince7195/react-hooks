@@ -1,0 +1,14 @@
+useEffect:
+
+useEffect(() => {
+    // statement to execute on component mount
+
+    const onUnmount = () => {
+        // // statement to execute on component unmounted
+    }
+    return onUnmount;
+},
+[state.email]);
+// useEffect is to handle of mount, update and unmount functionality as in class's life cycle events
+// useEffect render action is executed on change of keys or entire object mentioned in the array
+// we can write multiple hooks in the same component, it will be executed in same order

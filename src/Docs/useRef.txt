@@ -1,0 +1,6 @@
+useRef is used to store the reference of an element in the component
+
+const inputRef = useRef();
+
+<input type="email" name="email" id="email" ref={inputRef} />
+<button onClick={() => { inputRef.current.focus() }} >Focus</button>
